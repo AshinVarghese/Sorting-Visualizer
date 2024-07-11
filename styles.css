@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(120deg, #ff758c, #ff7eb3, #ff81d7, #bf88f0, #8791ff, #00c1ff, #0be7ff, #56f7ff);
+    background-size: 200% 200%; /* Larger background for smooth animation */
+    animation: gradientAnimation 20s ease infinite; /* Animation settings */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#canvas-container {
+    border: 1px solid #ddd;
+    padding: 0;
+    background-color: #fff;
+}
+
+canvas {
+    display: block;
+}
